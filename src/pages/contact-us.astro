@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Contact Us - ${SITE_TITLE}`} description="Get in touch with the Techzard team." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Get in Touch!</h1>
+			<p>
+				Have a question, a brilliant idea, or just want to say hello? We're all ears!
+			</p>
+			<p>
+				Send your thoughts, questions, and digital high-fives to us at
+				<a href="mailto:hello@techzard.fun">hello@techzard.fun</a>. We look forward to hearing from you!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
