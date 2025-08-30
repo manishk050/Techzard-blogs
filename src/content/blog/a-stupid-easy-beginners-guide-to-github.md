@@ -4,7 +4,6 @@ description: 'Don''t be intimidated by GitHub! Our stupid easy beginner''s guide
 pubDate: 'Oct 26 2023'
 heroImage: '../../assets/a-stupid-easy-beginners-guide-to-github.jpg'
 ---
-# A Stupid Easy Beginner's Guide to GitHub
 
 Ever stared at a folder filled with files like `project_final.docx`, `project_final_v2.docx`, and `project_final_REALLY_final_this_time.docx`? We've all been there. This digital chaos is precisely the problem that GitHub solves, not just for writers, but for millions of software developers, designers, and creators worldwide. This post is your stupid easy **beginner's guide to GitHub**, designed to take you from zero to hero without the confusing jargon.
 
