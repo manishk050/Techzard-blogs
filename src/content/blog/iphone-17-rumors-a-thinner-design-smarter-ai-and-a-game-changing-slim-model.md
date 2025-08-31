@@ -4,7 +4,7 @@ description: 'Dive into the latest iPhone 17 rumors. Explore the potential for a
 pubDate: 'Aug 31 2025'
 heroImage: '../../assets/iphone-17-rumors-a-thinner-design-smarter-ai-and-a-game-changing-slim-model.jpg'
 author: 'Manish K'
-keywords: 'iPhone 17', 'Apple rumors', 'iPhone 17 Pro', 'iPhone 17 Slim', 'iOS 19', 'Apple AI', 'smartphone leaks', 'new iPhone 2025'
+keywords: ['iPhone 17', 'Apple rumors', 'iPhone 17 Pro', 'iPhone 17 Slim', 'iOS 19', 'Apple AI', 'smartphone leaks', 'new iPhone 2025']
 tags: ['Apple', 'iPhone', 'Technology', 'Rumors', 'Mobile']
 ---
 The digital ink has barely dried on speculation for the iPhone 16, yet the relentless Apple rumor mill has already spun its sights on 2025. The iPhone 17 is shaping up to be more than just an incremental update; whispers from the supply chain suggest a significant overhaul that could redefine Apple's flagship lineup. From a radically new, ultra-thin model to a massive leap in on-device artificial intelligence, the iPhone 17 promises to be a landmark release.
