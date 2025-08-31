@@ -4,7 +4,7 @@ description: 'Ready to launch a blazing-fast blog? This detailed beginner''s gui
 pubDate: 'Oct 26 2023'
 heroImage: '../../assets/a-beginners-guide-to-blogging-with-astro-and-vercel.jpg'
 author: 'Manish K'
-keywords: 'Astro', 'Vercel', 'blogging', 'beginner guide', 'static site generator', 'web development', 'JavaScript', 'Jamstack', 'performance'
+keywords: 'Astro', 'Vercel', 'blogging', 'beginner guide', 'static site generator', 'web development', 'JavaScript', 'Jamstack', 'performance'.
 tags: ['Astro', 'Vercel', 'Blogging', 'Static Site Generator', 'Jamstack', 'Web Development', 'Tutorial']
 ---
 Dreaming of starting your own blog but intimidated by the complex world of WordPress, hosting, and databases? You're not alone. The modern web offers a simpler, faster, and more secure path for creators. This guide will show you how to launch a professional, high-performance blog using two incredible tools: Astro for building and Vercel for deploying. By the end, you'll have a live blog that is not only easy to manage but also ridiculously fast, setting you up for success from day one.
