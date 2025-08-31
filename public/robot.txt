@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://techzard.fun/sitemap-index.xml
