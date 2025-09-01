@@ -3,7 +3,7 @@ title: 'Google Pixel 10, 10 Pro, and 10 Pro XL Review: The AI Revolution Continu
 description: 'An in-depth review of the Google Pixel 10, 10 Pro, and 10 Pro XL. We explore the new Tensor G5 chip, AI-powered camera upgrades, display technology, and battery life to see if this is the ultimate Android experience.'
 pubDate: 'Oct 12 2025'
 heroImage: '../../assets/google-pixel-10-10-pro-and-10-pro-xl-review-the-ai-revolution-continues.jpg'
-heroAlt: 'The Ultimate Guide to Blogging: How to Start and Succeed in 2024'
+heroAlt: 'google-pixel-10-10-pro-and-10-pro-xl-review-the-ai-revolution-continues'
 author: 'Manish K'
 tags: []
 ---
