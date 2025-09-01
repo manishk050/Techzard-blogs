@@ -16,7 +16,7 @@ const posts = (await getCollection('blog')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`${SITE_TITLE} - Blog`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`{SITE_TITLE} - Blog'} description={`{SITE_DESCRIPTION} - Blog`} />
 		<GoogleAnalytics />
 		<style>
 			main {
@@ -92,6 +92,7 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
+				<h1>Tech Blogs</h1>
 				<ul>
 					{
 						posts.map((post) => (
