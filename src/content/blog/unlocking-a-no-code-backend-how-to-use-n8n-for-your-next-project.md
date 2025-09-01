@@ -3,7 +3,7 @@ title: 'Unlocking a No-Code Backend: How to Use n8n for Your Next Project'
 description: 'Discover how to leverage n8n as a powerful, low-code backend. Learn to build APIs, handle webhooks, and manage data without writing extensive server-side code.'
 pubDate: 'Aug 31 2025'
 heroImage: '../../assets/unlocking-a-no-code-backend-how-to-use-n8n-for-your-next-project.jpg'
-heroAlt: 'The Ultimate Guide to Blogging: How to Start and Succeed in 2024'
+heroAlt: 'unlocking-a-no-code-backend-how-to-use-n8n-for-your-next-project'
 author: 'Manish K'
 keywords: ['n8n backend', 'low-code backend', 'no-code API', 'workflow automation', 'n8n tutorial', 'backend as a service', 'serverless backend']
 tags: ['n8n', 'backend', 'low-code', 'no-code', 'API', 'automation', 'development']
