@@ -1,38 +1,47 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 ---
 
-<Layout
-  title="About Techzard"
-  description="Discover what Techzard Blogs is all about"
-  pubDate={new Date('August 30 2025')}
->
-  <p>
-    Welcome to <strong>Techzard Blogs</strong> — a space where technology meets curiosity.  
-    This blog is all about sharing insights on web development, artificial intelligence, 
-    and the latest trends in the tech world. Whether you are a beginner learning to code 
-    or an experienced developer exploring new tools, you’ll find valuable content here.
-  </p>
-
-  <p>
-    I created Techzard to simplify complex tech concepts, experiment with modern 
-    frameworks, and provide hands-on tutorials that are easy to follow. My focus is 
-    on real-world applications and knowledge that you can immediately use in your 
-    projects.
-  </p>
-
-  <p>
-    Topics you’ll often see covered here:
-  </p>
-  <ul>
-    <li>⚡ Modern Web Development (Astro, React, TailwindCSS, etc.)</li>
-    <li>🤖 Artificial Intelligence & Generative AI</li>
-    <li>📊 Data Science, Productivity & Tech Trends</li>
-  </ul>
-
-  <p>
-    Thanks for stopping by — I hope you find inspiration, tutorials, and fresh ideas 
-    that fuel your own tech journey. If you’d like to connect, feel free to head over 
-    to the <a href="/contact">Contact page</a>.
-  </p>
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Contact - ${SITE_TITLE}`} description="Get in touch with the Techzard team." />
+		<GoogleAnalytics />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>About</h1>
+			<p>
+				Welcome to <strong>Techzard Blogs</strong> — a space where technology meets curiosity.  
+        This blog is all about sharing insights on web development, artificial intelligence, 
+        and the latest trends in the tech world. Whether you are a beginner learning to code 
+        or an experienced developer exploring new tools, you’ll find valuable content here.
+			</p>
+      <p>
+        I created Techzard to simplify complex tech concepts, experiment with modern 
+        frameworks, and provide hands-on tutorials that are easy to follow. My focus is 
+        on real-world applications and knowledge that you can immediately use in your 
+        projects.
+      </p>
+      <p>
+        Topics you’ll often see covered here:
+      </p>
+      <ul>
+        <li>⚡ Modern Web Development (Astro, React, TailwindCSS, etc.)</li>
+        <li>🤖 Artificial Intelligence & Generative AI</li>
+        <li>📊 Data Science, Productivity & Tech Trends</li>
+      </ul>
+      <p>
+        Thanks for stopping by — I hope you find inspiration, tutorials, and fresh ideas 
+        that fuel your own tech journey. If you’d like to connect, feel free to head over 
+        to the <a href="/contact">Contact page</a>.
+      </p>
+		</main>
+		<Footer />
+	</body>
+</html>
