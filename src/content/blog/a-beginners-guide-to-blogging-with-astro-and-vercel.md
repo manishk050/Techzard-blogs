@@ -3,6 +3,7 @@ title: 'A Beginner''s Guide to Blogging with Astro and Vercel'
 description: 'Ready to launch a blazing-fast blog? This detailed beginner''s guide walks you through building and deploying a modern blog from scratch using Astro and Vercel, from initial setup to going live.'
 pubDate: 'Oct 26 2023'
 heroImage: '../../assets/a-beginners-guide-to-blogging-with-astro-and-vercel.jpg'
+heroAlt: 'a-beginners-guide-to-blogging-with-astro-and-vercel'
 author: 'Manish K'
 keywords: ['Astro', 'Vercel', 'blogging', 'beginner guide', 'static site generator', 'web development', 'JavaScript', 'Jamstack', 'performance']
 tags: ['Astro', 'Vercel', 'Blogging', 'Static Site Generator', 'Jamstack', 'Web Development', 'Tutorial']
