@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { Schema } from 'astro-seo-schema';
 import type { BlogPosting, Person } from 'schema-dts';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -31,6 +32,7 @@ const schema: BlogPosting = {
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		<GoogleAnalytics />
 		<Schema item={schema} />
 		<style>
 			main {
