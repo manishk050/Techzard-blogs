@@ -3,7 +3,7 @@ title: 'Google Pixel 10 Pro vs iPhone 16 Pro: The Ultimate 2025 Flagship Showdow
 description: 'An in-depth specs comparison of the Google Pixel 10 Pro vs iPhone 16 Pro. We analyze rumored cameras, AI features, Tensor G5, and A18 Pro chips to see who wins.'
 pubDate: 'Aug 31 2025'
 heroImage: '../../assets/google-pixel-10-pro-vs-iphone-16-pro-the-ultimate-2025-flagship-showdown.jpg'
-heroAlt: 'The Ultimate Guide to Blogging: How to Start and Succeed in 2024'
+heroAlt: 'google-pixel-10-pro-vs-iphone-16-pro-the-ultimate-2025-flagship-showdown'
 author: 'Manish K'
 keywords: ['Google Pixel 10 Pro', 'iPhone 16 Pro', 'Pixel 10 Pro vs iPhone 16 Pro', 'Tensor G5', 'A18 Pro', 'smartphone comparison', '2025 flagship phones']
 tags: ['Pixel 10 Pro', 'iPhone 16 Pro', 'Google', 'Apple', 'Tech Comparison', 'AI', 'Smartphones']
