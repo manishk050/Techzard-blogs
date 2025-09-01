@@ -3,6 +3,7 @@ title: 'Google Pixel 10 Pro vs. iPhone 16 Pro: The Ultimate Spec Showdown (Based
 description: 'A deep dive into the rumored specs of the Google Pixel 10 Pro and iPhone 16 Pro, comparing their processors, cameras, displays, and AI capabilities.'
 pubDate: 'Aug 31 2025'
 heroImage: '../../assets/google-pixel-10-pro-vs-iphone-16-pro-the-ultimate-spec-showdown-based-on-leaks.jpg'
+heroAlt: 'The Ultimate Guide to Blogging: How to Start and Succeed in 2024'
 author: 'Manish K'
 keywords: ['Google Pixel 10 Pro', 'iPhone 16 Pro', 'Pixel vs iPhone', 'Tensor G5', 'Apple A18 Pro', 'smartphone comparison', 'tech rumors']
 tags: ['smartphones', 'tech', 'google', 'apple', 'pixel', 'iphone', 'comparison', 'rumors']
