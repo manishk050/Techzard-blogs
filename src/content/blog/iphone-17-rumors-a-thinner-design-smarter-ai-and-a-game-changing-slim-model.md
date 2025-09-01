@@ -3,7 +3,7 @@ title: 'iPhone 17 Rumors: A Thinner Design, Smarter AI, and a Game-Changing ''Sl
 description: 'Dive into the latest iPhone 17 rumors. Explore the potential for a radical redesign with an ''iPhone 17 Slim'' model, advanced AI features, and major camera upgrades.'
 pubDate: 'Aug 31 2025'
 heroImage: '../../assets/iphone-17-rumors-a-thinner-design-smarter-ai-and-a-game-changing-slim-model.jpg'
-heroAlt: 'The Ultimate Guide to Blogging: How to Start and Succeed in 2024'
+heroAlt: 'iphone-17-rumors-a-thinner-design-smarter-ai-and-a-game-changing-slim-model'
 author: 'Manish K'
 keywords: ['iPhone 17', 'Apple rumors', 'iPhone 17 Pro', 'iPhone 17 Slim', 'iOS 19', 'Apple AI', 'smartphone leaks', 'new iPhone 2025']
 tags: ['Apple', 'iPhone', 'Technology', 'Rumors', 'Mobile']
