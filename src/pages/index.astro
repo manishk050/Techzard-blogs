@@ -21,71 +21,101 @@ const posts = (await getCollection('blog')).sort(
 		<style>
 			main {
 				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: auto;
 			}
+
+			/* --- NEW STYLES START HERE --- */
+
+			/* The main list container */
 			ul {
 				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
+				flex-direction: column;
+				gap: 2rem; /* Space between cards */
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
 			}
+
+			/* The Card */
 			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
 				border-radius: 12px;
+				background: #FAFAFA;
+				border: 1px solid #E5E5E5;
+				overflow: hidden; /* Ensures the image corners are rounded */
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+				transition: box-shadow 0.2s ease, transform 0.2s ease;
 			}
+
+			ul li:hover {
+				box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+				transform: translateY(-2px);
+			}
+
+			/* The link that wraps the card content */
 			ul li a {
-				display: block;
+				display: flex;
+				align-items: center;
+				gap: 1.5rem;
+				color: inherit;
+				text-decoration: none;
 			}
+
+			/* The image container on the left */
+			.card-image {
+				flex-shrink: 0;
+				width: 300px;
+				height: 170px;
+			}
+
+			.card-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* Ensures the image covers the area without distortion */
+			}
+
+			/* The text content container on the right */
+			.card-content {
+				padding: 1rem 1rem 1rem 0; /* Add padding to the text */
+			}
+
 			.title {
-				margin: 0;
+				font-size: 1.5rem;
+				font-weight: 700; /* Titles are bold by default, but this ensures it */
+				margin: 0 0 0.5rem 0;
 				color: rgb(var(--black));
-				line-height: 1;
+				line-height: 1.2;
 			}
+
+			.description {
+				margin: 0 0 1rem 0;
+				color: #555;
+				font-size: 1rem;
+				line-height: 1.5;
+			}
+			
 			.date {
 				margin: 0;
 				color: rgb(var(--gray));
+				font-size: 0.875rem;
 			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
+
+			/* Responsive styles for smaller screens */
 			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
+				ul li a {
+					flex-direction: column; /* Stack image on top of content */
+					gap: 0;
 				}
-				ul li {
+				.card-image {
 					width: 100%;
-					text-align: center;
+					height: 200px;
 				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
+				.card-content {
+					padding: 1.5rem;
 				}
 			}
+
+			/* --- NEW STYLES END HERE --- */
 		</style>
 	</head>
 	<body>
@@ -98,13 +128,23 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="{post.data.heroAlt}" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
+									<div class="card-image">
+										{post.data.heroImage && (
+											<Image
+												width={300}
+												height={170}
+												src={post.data.heroImage}
+												alt={post.data.heroAlt || 'Blog post image'}
+											/>
+										)}
+									</div>
+									<div class="card-content">
+										<h3 class="title">{post.data.title}</h3>
+										<p class="description">{post.data.description}</p>
+										<p class="date">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</div>
 								</a>
 							</li>
 						))
