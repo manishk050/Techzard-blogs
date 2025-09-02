@@ -1,19 +1,31 @@
 ---
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
+// Import the global.css file so it is included on all pages.
 import '../styles/global.css';
-import type { ImageMetadata } from 'astro';
-import FallbackImage from '../assets/004.jpg';
-import { SITE_TITLE } from '../consts';
-import { SEO } from "astro-seo";
 
-interface Props {
-	title: string;
-	description: string;
-	image?: ImageMetadata;
+import { SEO } from 'astro-seo';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import type { ImageMetadata } from 'astro:assets';
+
+export interface Props {
+	title?: string;
+	description?: string;
+	image?: ImageMetadata; 
+    imageAlt?: string;
 }
 
-const { title, description, image = FallbackImage } = Astro.props;
+// Use props passed from the page, or fall back to site-wide defaults
+const {
+	title = SITE_TITLE,
+	description = SITE_DESCRIPTION,
+	image,
+    imageAlt = 'A decorative image for the Techzard blog',
+} = Astro.props;
+
+// Generate the absolute URL for the social media image.
+// It uses the page-specific image if provided, otherwise it uses a default image.
+const socialImage = image
+	? new URL(image.src, Astro.url).toString()
+	: new URL('/default-og-image.png', Astro.url).toString();
 ---
 
 <!-- Global Metadata -->
@@ -29,19 +41,33 @@ const { title, description, image = FallbackImage } = Astro.props;
 />
 <meta name="generator" content={Astro.generator} />
 
-<!-- Font preloads -->
-<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
-<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
-
+<!-- 
+  The astro-seo component handles all of our main SEO and social media tags.
+-->
 <SEO
-    title={title}
-    description={description}
-    openGraph={{
-        basic: {
-            title: title,
-            type: 'website',
-            image: new URL(image.src, Astro.url).toString(),
-        }
-    }}
-    
+	title={title}
+	description={description}
+	extend={{
+		// Sets the <link rel="canonical" href="..."> tag
+		link: [{ rel: 'canonical', href: Astro.url.href }],
+	}}
+	openGraph={{
+		basic: {
+			title: title,
+			description: description,
+			url: Astro.url.href,
+			image: socialImage,
+			type: 'article',
+			site_name: SITE_TITLE,
+		},
+        imageAlt: imageAlt,
+	}}
+	twitter={{
+		// Use a large image card for a nice visual preview
+		card: 'summary_large_image',
+		title: title,
+		description: description,
+		image: socialImage,
+        imageAlt: imageAlt,
+	}}
 />
