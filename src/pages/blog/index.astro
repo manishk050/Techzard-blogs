@@ -93,6 +93,7 @@ const posts = (await getCollection('blog')).sort(
 		<main>
 			<section>
 				<h1>Tech Blogs</h1>
+				<h2>Featured</h2>
 				<ul>
 					{
 						posts.map((post) => (
@@ -101,7 +102,7 @@ const posts = (await getCollection('blog')).sort(
 									{post.data.heroImage && (
 										<Image width={720} height={360} src={post.data.heroImage} alt="{post.data.heroAlt}" />
 									)}
-									<h4 class="title">{post.data.title}</h4>
+									<h3 class="title">{post.data.title}</h3>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
