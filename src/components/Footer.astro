@@ -3,13 +3,32 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Techzard. All rights reserved.
+	<div class="footer-content">
+		<span>&copy; {today.getFullYear()} Techzard. All rights reserved.</span>
+		<a href="/privacy-policy/">Privacy Policy</a>
+	</div>
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 2em 1em;
+		padding: 2em 1em; /* Increased top/bottom padding slightly */
 		background: #FAFAFA;
-		color: rgb(var(--black));
+		color: rgb(var(--gray)); /* Changed to gray for a softer look */
 		text-align: center;
+		border-top: 1px solid rgb(var(--gray-light)); /* Added a subtle top border */
+	}
+	.footer-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5em; /* Adds space between the copyright and the link */
+		flex-wrap: wrap; /* Allows items to stack on small screens */
+	}
+	footer a {
+		color: rgb(var(--gray-dark)); /* Made the link color slightly darker for contrast */
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: var(--accent);
 	}
 </style>

@@ -45,6 +45,7 @@ const posts = (await getCollection('blog')).sort(
 				overflow: hidden; /* Ensures the image corners are rounded */
 				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
 				transition: box-shadow 0.2s ease, transform 0.2s ease;
+				height: 180px;
 			}
 
 			ul li:hover {
@@ -56,31 +57,37 @@ const posts = (await getCollection('blog')).sort(
 			ul li a {
 				display: flex;
 				align-items: center;
-				gap: 1.5rem;
+				gap: 10px;
 				color: inherit;
 				text-decoration: none;
+				height: 100%;
 			}
 
 			/* The image container on the left */
 			.card-image {
 				flex-shrink: 0;
 				width: 300px;
-				height: 170px;
-			}
+				height: 150px;
+				margin: 10px 10px 10px 13px;
+				}
 
 			.card-image img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover; /* Ensures the image covers the area without distortion */
+				border-radius: 12px;
 			}
 
 			/* The text content container on the right */
 			.card-content {
 				padding: 1rem 1rem 1rem 0; /* Add padding to the text */
+				display: flex; /* ADD THIS */
+				flex-direction: column; /* ADD THIS */
+				flex-grow: 1; /* ADD THIS */
 			}
 
 			.title {
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 				font-weight: 700; /* Titles are bold by default, but this ensures it */
 				margin: 0 0 0.5rem 0;
 				color: rgb(var(--black));
@@ -90,25 +97,33 @@ const posts = (await getCollection('blog')).sort(
 			.description {
 				margin: 0 0 1rem 0;
 				color: #555;
-				font-size: 1rem;
+				font-size: 0.9rem;
 				line-height: 1.5;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
 			}
 			
 			.date {
 				margin: 0;
 				color: rgb(var(--gray));
-				font-size: 0.875rem;
+				font-size: 0.9rem;
+				margin-top: auto;
 			}
 
 			/* Responsive styles for smaller screens */
 			@media (max-width: 720px) {
+				ul li {
+					height: auto;
+				}
 				ul li a {
 					flex-direction: column; /* Stack image on top of content */
 					gap: 0;
 				}
 				.card-image {
 					width: 100%;
-					height: 200px;
+					height: 250px;
 				}
 				.card-content {
 					padding: 1.5rem;
